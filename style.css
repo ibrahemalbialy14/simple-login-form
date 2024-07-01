@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(78, 78, 78);
+}
+
+.form-control label span {
+display: inline-block;
+font-size: 18px;
+min-width: 5px;
+transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.conainer {
+
+    width:calc(4 * 80px);
+    height: calc(4 * 72px);
+     backdrop-filter: blur(100%);
+     background-color: rgb(255, 255, 255,0.5);
+     position: relative;
+}
+
+.form-control input:focus, 
+.form-control input:valid {
+
+    border-bottom-color: lightblue;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+
+color: lightblue;
+transform: translateY(-20px);
+}
+
+.conainer::before ,
+.conainer::after {
+    content: "";
+    display: flex;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -2;
+}
+.conainer::before{
+    top: -50px;
+    left: -50px;
+    background-color: #00bfff;
+}
+.conainer::after{
+    top: 224px;
+    left: 259px;
+    background-color: #ff1568;
+}

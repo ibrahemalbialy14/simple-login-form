@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/tailwind.config.js">
+</head>
+  <title>Form Wave Animation</title>
+</head>
+<body class="flex flex-col items-center justify-center overflow-hidden m-0 text-white w-full h-screen">
+  <div class="conainer py-5 px-10 rounded-lg">
+    <h1 class="text-center mb-2 font-bold text-2xl">Please Login</h1>
+    <form>
+      <div class="form-control relative mt-1 mx-0 mb-2 w-20 ">
+        <input class="text-white text-lg pt-1 my-6 px-0 block bg-transparent rounded-none border-b-2 border-white focus:outline-none valid:outline-none" type="text" required>
+        <label class="absolute top-0.5 left-0 font-semibold">Email</label>
+      </div>
+      <div class="form-control relative mt-1 mx-0 mb-2 w-20 ">
+        <input class="text-white text-lg py-0.5 my-6 px-0 block bg-transparent rounded-none border-b-2 border-white focus:outline-none valid:outline-none" type="password" required>
+        <label class="absolute top-1 left-0 font-semibold">Password</label>
+      </div>
+      <button class="btn cursor-pointer inline-flex w-full p-1 pl-24 text-lg border-none rounded-md text-center  focus:outline-none active:scale-95 font-semibold" style="background-color: #009bce;">Login</button>
+      <p class="text mt-2">Don't have an account? <a class="font-semibold" style="color: rgb(79, 151, 247);" href="#">Register</a></p>
+    </form>
+  </div>
+  </h1>
+  <script src="./script.js"></script>
+</body>
+</html>
